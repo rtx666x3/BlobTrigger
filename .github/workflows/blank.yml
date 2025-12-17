@@ -74,6 +74,7 @@ jobs:
           auth-type: IDENTITY
           tenant-id: ${{ secrets.__tenantidsecretname__ }}
           subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
+          enable-AzPSSession: true
 
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
